@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+final class DataManager {
+    
+    func getData() -> String {
+        return "Hello"
+    }
+}
