@@ -10,8 +10,9 @@ import UIKit
 final class MVVMAssembly {
     func assemble() -> UIViewController {
         let dataManager = DataManager()
-        // 
-        let viewModel = MVVMViewModel(dataManager: dataManager)
+        
+        let model = MVVMModel(dataManager: dataManager)
+        let viewModel = MVVMViewModel(model: model)
         let view = MVVMViewController()
         
         view.viewModel = viewModel

@@ -24,14 +24,14 @@ final class MVVMViewModel: MVVMViewModelProtocol {
     }
     var titleDidChange: ((MVVMViewModelProtocol) -> Void)?
     
-    let dataManager: DataManager
+    let model: MVVMModelProtocol
     
-    init(dataManager: DataManager) {
-        self.dataManager = dataManager
+    init(model: MVVMModelProtocol) {
+        self.model = model
     }
     
     func viewDidLoad() {
-        let data = dataManager.getData()
+        let data = model.getData()
         title = data
     }
     
