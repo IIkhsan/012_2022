@@ -14,8 +14,8 @@ protocol MVPAssemblyProtocol: AnyObject {
 final class MVPAssembly: MVPAssemblyProtocol {
     
     func assemble() -> UIViewController {
-        let dataManager = DataManager()
-        let presenter = MVPPresenter(dataManager: dataManager)
+        let model = MVPModelService()
+        let presenter = MVPPresenter(model: model)
         let viewController = MVPViewController(presenter: presenter)
         
         presenter.view = viewController

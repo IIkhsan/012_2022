@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D62C6CF27C4067E001D8C37 /* VIPERViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6CE27C4067E001D8C37 /* VIPERViewController.swift */; };
+		4D62C6D127C4068D001D8C37 /* VIPERInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6D027C4068D001D8C37 /* VIPERInteractor.swift */; };
+		4D62C6D327C406A1001D8C37 /* VIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6D227C406A1001D8C37 /* VIPERPresenter.swift */; };
+		4D62C6D527C406B1001D8C37 /* VIPERRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6D427C406B1001D8C37 /* VIPERRouter.swift */; };
+		4D62C6DC27C41220001D8C37 /* VIPERAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6DB27C41220001D8C37 /* VIPERAssembly.swift */; };
+		4D62C6E327C4205C001D8C37 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6E227C4205C001D8C37 /* MVVMViewModel.swift */; };
+		4D62C6E527C420A1001D8C37 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6E427C420A1001D8C37 /* MVVMViewController.swift */; };
+		4D62C6E727C429BF001D8C37 /* MVVMAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62C6E627C429BF001D8C37 /* MVVMAssembly.swift */; };
 		4D975B1E27BBB16A0032AAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D975B1D27BBB16A0032AAD3 /* AppDelegate.swift */; };
 		4D975B2027BBB16A0032AAD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D975B1F27BBB16A0032AAD3 /* SceneDelegate.swift */; };
 		4D975B2227BBB16A0032AAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D975B2127BBB16A0032AAD3 /* ViewController.swift */; };
@@ -21,6 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D62C6CD27C405BF001D8C37 /* MVP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MVP.md; sourceTree = "<group>"; };
+		4D62C6CE27C4067E001D8C37 /* VIPERViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERViewController.swift; sourceTree = "<group>"; };
+		4D62C6D027C4068D001D8C37 /* VIPERInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERInteractor.swift; sourceTree = "<group>"; };
+		4D62C6D227C406A1001D8C37 /* VIPERPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERPresenter.swift; sourceTree = "<group>"; };
+		4D62C6D427C406B1001D8C37 /* VIPERRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERRouter.swift; sourceTree = "<group>"; };
+		4D62C6DB27C41220001D8C37 /* VIPERAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERAssembly.swift; sourceTree = "<group>"; };
+		4D62C6DD27C41A88001D8C37 /* VIPER.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = VIPER.md; sourceTree = "<group>"; };
+		4D62C6E227C4205C001D8C37 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
+		4D62C6E427C420A1001D8C37 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		4D62C6E627C429BF001D8C37 /* MVVMAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMAssembly.swift; sourceTree = "<group>"; };
 		4D975B1A27BBB16A0032AAD3 /* Archetecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Archetecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D975B1D27BBB16A0032AAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D975B1F27BBB16A0032AAD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +65,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D62C6CA27C40401001D8C37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D975B3927BBE3F80032AAD3 /* MVPModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D62C6CB27C40407001D8C37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D975B3527BBE3C10032AAD3 /* MVPViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D62C6CC27C4040E001D8C37 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4D975B3727BBE3EA0032AAD3 /* MVPPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4D62C6D627C406B5001D8C37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6CE27C4067E001D8C37 /* VIPERViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D62C6D727C406BA001D8C37 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6D027C4068D001D8C37 /* VIPERInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4D62C6D827C406C8001D8C37 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6D227C406A1001D8C37 /* VIPERPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4D62C6D927C406D3001D8C37 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4D62C6DA27C406E4001D8C37 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6D427C406B1001D8C37 /* VIPERRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4D62C6DE27C41DA4001D8C37 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6E127C41DE1001D8C37 /* ViewModel */,
+				4D62C6E027C41DD9001D8C37 /* Model */,
+				4D62C6DF27C41DCF001D8C37 /* View */,
+				4D62C6E627C429BF001D8C37 /* MVVMAssembly.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		4D62C6DF27C41DCF001D8C37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6E427C420A1001D8C37 /* MVVMViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4D62C6E027C41DD9001D8C37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4D62C6E127C41DE1001D8C37 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4D62C6E227C4205C001D8C37 /* MVVMViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		4D975B1127BBB16A0032AAD3 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				4D975B3B27BBE40B0032AAD3 /* DataManager.swift */,
+				4D62C6DE27C41DA4001D8C37 /* MVVM */,
 				4D975B3327BBB1D40032AAD3 /* VIPER */,
 				4D975B3127BBB1C90032AAD3 /* MVP */,
 				4D975B1D27BBB16A0032AAD3 /* AppDelegate.swift */,
@@ -83,10 +199,11 @@
 		4D975B3127BBB1C90032AAD3 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				4D975B3527BBE3C10032AAD3 /* MVPViewController.swift */,
-				4D975B3727BBE3EA0032AAD3 /* MVPPresenter.swift */,
-				4D975B3927BBE3F80032AAD3 /* MVPModel.swift */,
+				4D62C6CC27C4040E001D8C37 /* Presenter */,
+				4D62C6CB27C40407001D8C37 /* View */,
+				4D62C6CA27C40401001D8C37 /* Model */,
 				4D975B3D27BBE4570032AAD3 /* MVPAssembly.swift */,
+				4D62C6CD27C405BF001D8C37 /* MVP.md */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -94,6 +211,13 @@
 		4D975B3327BBB1D40032AAD3 /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				4D62C6DA27C406E4001D8C37 /* Router */,
+				4D62C6D927C406D3001D8C37 /* Entity */,
+				4D62C6D827C406C8001D8C37 /* Presenter */,
+				4D62C6D727C406BA001D8C37 /* Interactor */,
+				4D62C6D627C406B5001D8C37 /* View */,
+				4D62C6DB27C41220001D8C37 /* VIPERAssembly.swift */,
+				4D62C6DD27C41A88001D8C37 /* VIPER.md */,
 			);
 			path = VIPER;
 			sourceTree = "<group>";
@@ -169,14 +293,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D62C6CF27C4067E001D8C37 /* VIPERViewController.swift in Sources */,
+				4D62C6D327C406A1001D8C37 /* VIPERPresenter.swift in Sources */,
 				4D975B3827BBE3EA0032AAD3 /* MVPPresenter.swift in Sources */,
+				4D62C6E727C429BF001D8C37 /* MVVMAssembly.swift in Sources */,
 				4D975B3A27BBE3F80032AAD3 /* MVPModel.swift in Sources */,
 				4D975B3627BBE3C10032AAD3 /* MVPViewController.swift in Sources */,
 				4D975B3E27BBE4570032AAD3 /* MVPAssembly.swift in Sources */,
+				4D62C6E327C4205C001D8C37 /* MVVMViewModel.swift in Sources */,
 				4D975B3C27BBE40B0032AAD3 /* DataManager.swift in Sources */,
 				4D975B2227BBB16A0032AAD3 /* ViewController.swift in Sources */,
 				4D975B1E27BBB16A0032AAD3 /* AppDelegate.swift in Sources */,
 				4D975B2027BBB16A0032AAD3 /* SceneDelegate.swift in Sources */,
+				4D62C6E527C420A1001D8C37 /* MVVMViewController.swift in Sources */,
+				4D62C6D127C4068D001D8C37 /* VIPERInteractor.swift in Sources */,
+				4D62C6D527C406B1001D8C37 /* VIPERRouter.swift in Sources */,
+				4D62C6DC27C41220001D8C37 /* VIPERAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

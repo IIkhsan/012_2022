@@ -16,19 +16,24 @@ final class MVPPresenter {
     
     // Dependencies
     weak var view: MVPViewProtocol?
-    let dataManager: DataManager
+    let model: MVPModelServiceProtocol
     
     // MARK: - Init
-    init(dataManager: DataManager) {
-        self.dataManager = dataManager
+    
+    init(model: MVPModelServiceProtocol) {
+        self.model = model
     }
 }
 
 // MARK: - MVPPresenterProtocol
+
 extension MVPPresenter: MVPPresenterProtocol {
     func viewDidLoad() {
-        let data = dataManager.getData()
-        view?.configureView(text: data)
+        model.loadText { data in
+            DispatchQueue.main.async {
+                self.view?.configureView(text: data)
+            }
+        }
     }
     
     func didTapButton() {

@@ -1,20 +1,25 @@
 //
-//  MVPViewController.swift
+//  VIPERViewController.swift
 //  Archetecture
 //
-//  Created by ilyas.ikhsanov on 15.02.2022.
+//  Created by ilyas.ikhsanov on 21.02.2022.
 //
 
 import UIKit
 
-protocol MVPViewProtocol: AnyObject {
+protocol VIPERViewInput: AnyObject {
     func configureView(text: String)
 }
 
-final class MVPViewController: UIViewController {
+protocol VIPERViewOutput: AnyObject {
+    func viewDidLoad()
+    func didTapButton()
+}
+
+final class VIPERViewController: UIViewController {
     
     //Dependencies
-    let presenter: MVPPresenterProtocol
+    private let presenter: VIPERViewOutput
     
     // UI
     lazy var titleLabel: UILabel = UILabel()
@@ -26,7 +31,7 @@ final class MVPViewController: UIViewController {
     }()
 
     // MARK: - Init
-    init(presenter: MVPPresenterProtocol) {
+    init(presenter: VIPERViewOutput) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -43,6 +48,7 @@ final class MVPViewController: UIViewController {
         createView()
     }
     
+    // Private
     private func createView() {
         view.backgroundColor = .white
         view.addSubview(titleLabel)
@@ -57,8 +63,9 @@ final class MVPViewController: UIViewController {
     }
 }
 
-// MARK: - MVPViewProtocol
-extension MVPViewController: MVPViewProtocol {
+// MARK: - VIPERViewInput
+
+extension VIPERViewController: VIPERViewInput {
     func configureView(text: String) {
         titleLabel.text = text
     }
