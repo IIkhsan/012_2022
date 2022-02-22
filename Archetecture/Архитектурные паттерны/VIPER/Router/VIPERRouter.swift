@@ -9,6 +9,7 @@ import UIKit
 
 protocol VIPERRouterProtocol {
     func showErrorAlert()
+    func showMVPModule()
 }
 
 final class VIPERRouter: VIPERRouterProtocol {
@@ -19,5 +20,11 @@ final class VIPERRouter: VIPERRouterProtocol {
     func showErrorAlert() {
         let alert = UIAlertController(title: "Внимание!", message: "Пришла ошибка", preferredStyle: .actionSheet)
         view?.present(alert, animated: true, completion: nil)
+    }
+    
+    func showMVPModule() {
+        let assemble = MVPAssembly()
+        let mvpView = assemble.assemble()
+        view?.present(mvpView, animated: true, completion: nil)
     }
 }

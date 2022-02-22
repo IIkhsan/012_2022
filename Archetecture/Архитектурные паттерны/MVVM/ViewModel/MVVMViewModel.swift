@@ -24,6 +24,7 @@ final class MVVMViewModel: MVVMViewModelProtocol {
     }
     var titleDidChange: ((MVVMViewModelProtocol) -> Void)?
     
+    // Dependencies
     let model: MVVMModelProtocol
     
     init(model: MVVMModelProtocol) {
@@ -31,7 +32,7 @@ final class MVVMViewModel: MVVMViewModelProtocol {
     }
     
     func viewDidLoad() {
-        let data = model.getData()
+        let data = model.getData() // сеть -> X -> кеш 
         title = data
     }
     

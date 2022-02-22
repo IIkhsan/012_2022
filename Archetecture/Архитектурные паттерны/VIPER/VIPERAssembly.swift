@@ -10,6 +10,7 @@ import UIKit
 final class VIPERAssembly {
     func assemble() -> UIViewController {
         let dataManager = DataManager()
+        
         let interactor = VIPERInteractor(dataManager: dataManager)
         let router = VIPERRouter()
         let presenter = VIPERPresenter(interactor: interactor, router: router)
