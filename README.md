@@ -1,4 +1,4 @@
-# 012_2022
+# Примеры реализации MVP. MVVM, VIPER, Observer, Factory, Responder Chain
 Архитектурные паттерны
 
 Список архитектур: https://github.com/onmyway133/awesome-ios-architecture
