@@ -9,6 +9,7 @@ import Foundation
 
 protocol MVPPresenterProtocol {
     func viewDidLoad()
+    func makeHelloString(name: String) -> String
     func didTapButton()
 }
 
@@ -38,5 +39,9 @@ extension MVPPresenter: MVPPresenterProtocol {
     
     func didTapButton() {
         view?.configureView(text: "1,2,3")
+    }
+    
+    func makeHelloString(name: String) -> String {
+        return name + ", приветствую тебя!"
     }
 }
